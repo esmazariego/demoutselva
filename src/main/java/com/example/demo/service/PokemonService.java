@@ -21,7 +21,8 @@ public class PokemonService implements IPokemon {
 	@Override
 	public PokemonDomain getPokemon() {
 		
-		return pokemonMapper.to(pokemonConsumer.getPokemon());
+		PokemonDomain var = pokemonMapper.to(pokemonConsumer.getPokemon());
+		return var;
 	}
 
 }

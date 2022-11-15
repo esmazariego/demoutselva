@@ -6,7 +6,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.demo.domain.PokemonDomain;
-import com.example.demo.dto.PokemonDto;
 import com.example.demo.service.IPokemon;
 
 @RestController
