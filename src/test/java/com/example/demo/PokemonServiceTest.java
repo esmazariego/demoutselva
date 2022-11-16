@@ -34,7 +34,7 @@ public class PokemonServiceTest {
 		
 		when(consumer.getPokemon()).thenReturn(getPokemonMock());
 		
-		PokemonDomain response = service.getPokemon();
+		PokemonDomain response = service.getPokemon("picachu");
 		
 		assertNotNull(response);
 		assertEquals("PIKACHU", response.getName());
@@ -44,7 +44,7 @@ public class PokemonServiceTest {
 	@Test
 	public void wheConsumerCallResponseError(){
 		
-		assertThrows(Exception.class, () -> service.getPokemon());
+		assertThrows(Exception.class, () -> service.getPokemon("picachu"));
 		
 	}
 
