@@ -15,7 +15,7 @@ import org.springframework.test.context.ActiveProfiles;
 import com.example.demo.consumer.PokemonConsumer;
 import com.example.demo.domain.PokemonDomain;
 import com.example.demo.dto.PokemonDto;
-import com.example.demo.service.PokemonService;
+import com.example.demo.service.ControllerApiService;
 
 @SpringBootTest
 @ActiveProfiles("test")
@@ -23,7 +23,7 @@ public class PokemonServiceTest {
 
 	
 	@Autowired
-	PokemonService service;
+	ControllerApiService service;
 	
 	@MockBean
 	PokemonConsumer consumer;
